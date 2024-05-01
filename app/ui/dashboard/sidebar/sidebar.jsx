@@ -1,7 +1,7 @@
 import MenuLink from "./menuLink/menuLink";
 import styles from "./sidebar.module.css"
 import Image from "next/image";
-import { MdDashboard } from "react-icons/md";
+import { MdDashboard, MdLogout } from "react-icons/md";
 
 const menuItems = [ 
 
@@ -74,17 +74,17 @@ const Sidebar  = ()=> {
         <>
         <div className={styles.container}>
             <div className={styles.user}>
-                <Image className={styles.userImage} src="/noavatar.png" alt="" width="50" height="50" />
-                <div className={styles.userDetail}>
+              <Image className={styles.userImage} src="/noavatar.png" alt="" width="50" height="50" />
+            <div className={styles.userDetail}>
                 <span className={styles.username}>Jhon Joe</span>
                 <span className={styles.userTitle}>Administrator</span>
             </div>
             </div>
            
-          <ul>
+          <ul className={styles.list}>
           {menuItems.map((cat)=>(
             <li key={cat.title}>
-                <span style={styles.cat}>{cat.title}</span>
+                <span className={styles.cat}>{cat.title}</span>
                 {cat.list.map(item=> (
                     <MenuLink item={item} key={item.title}/>
                 ))}
@@ -92,6 +92,10 @@ const Sidebar  = ()=> {
           ))}
 
           </ul>
+          <button className={styles.logout}>
+            <MdLogout/>
+            Logout
+            </button>
         </div>
         </>
     )
