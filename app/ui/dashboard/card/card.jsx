@@ -5,12 +5,13 @@ import { MdSupervisedUserCircle } from 'react-icons/md'
 const Card = () => {
   return (
     <div className={styles.contianer}>
-      <MdSupervisedUserCircle size={20}/>
+      <MdSupervisedUserCircle size={24}/>
       <div className={styles.texts}>
-        <span className={styles.titile}>Total Users</span>
+        <span className={styles.title}>Total Users</span>
         <span className={styles.number}>10.273</span>
         <span className={styles.detail}>
-     <span className={styles.positive}>12%</span> more than previous week</span>
+        <span className={styles.positive}>12%
+        </span> more than previous week</span>
       </div>
       </div>
   )

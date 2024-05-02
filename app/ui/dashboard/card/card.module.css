@@ -1,13 +1,18 @@
-.container{
-    background-color: var(--bgSoft);
+.contianer{
+    background-color:var(--bgSoft);
     padding: 20px;
     border-radius: 10px;
     display: flex;
     gap: 20px;
     cursor: pointer;
+    width: 100%;
 }
 
-.tests{
+.contianer:hover{
+    background-color: #2e372e;
+}
+
+.texts{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -20,10 +25,10 @@
 }
 
 .detail{
-    font-size: 14px;
-    font-weight: 300px;
+    font-size: 13px;
+    font-weight: 300
 }
-.postive{
+.positive{
     color: lime;
 }
 
