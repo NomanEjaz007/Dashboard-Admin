@@ -16,7 +16,7 @@ const Dashboard =()=>{
                 <Card/>
             </div>
             <Transcations/>
-            <Chart/>
+                <Chart/>
         </div>
         <div className={styles.side}>
         <Righbar/>   
